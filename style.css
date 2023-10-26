@@ -1,0 +1,230 @@
+:root{
+    --purple: #d9a2e7;
+    --bg: #1d1d1d;
+    --shadow: 0 2px 2px rgb(0 0 0/0.5);
+
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
+    min-height: 4000px;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url(img/headpic.png);
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: grayscale();
+}
+
+.hero{
+    position: relative;
+    min-height: 100vh;
+}
+
+.hero h1, .hero h5, .hero h4 {
+    text-shadow: var(--shadow);
+}
+
+.hero h1 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 3rem;
+}
+
+.hero a {
+    color: var(--purple);
+    background-color: white;
+    font-size: 0.9rem;
+}
+
+.hero a:hover {
+    color: white;
+    background-color: var(--purple);
+}
+
+.home {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    padding-top: 5rem;
+    padding-bottom: 5 rem;
+    background-image: url(img/bg-home.png);
+}
+
+.home .italic-p {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+.home .bold-p {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+
+.info {
+    background-size: cover;
+    background-position: center;
+    min-height: 800px;
+    padding-top: 5rem;
+    padding-bottom: 5 rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: white;
+    background-image: url(img/infobg.png);
+
+}
+
+.info h3 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.info .history {
+    font-family: 'Bodoni Moda', serif;
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.info .heritage {
+    font-family: 'Bodoni Moda', serif;
+    font-style: bold;
+    font-size: 1rem;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info .andsymbol {
+    font-size: 4rem;
+    font-style: normal;
+}
+
+
+/* .mynavbar {
+
+} */
+
+.mynavbar .navbar-brand, .mynavbar .offcanvas-title {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 2rem;
+}
+
+.address {
+    /* background-color: var(--bg); */
+    background-image: url(img/bg-address.png);
+    color: white;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.address h2 {
+    font-family: 'Cinzel Decorative', cursive;
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.address h4 {
+    font-family: 'Bodoni Moda', serif;
+    font-style: bold;
+    font-size: 2rem;
+}
+
+.address p {
+    font-family: 'Bodoni Moda', serif;
+    font-style: bold;
+    font-size: 1rem;
+}
+
+.address h5 {
+    font-family: 'Bodoni Moda', serif;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+
+.address .cardwedding {
+    min-height: 20vh;
+}
+
+.galery {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.barcode {
+    background-image: url(img/barcodebg.png);
+    color: white;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.barcode .barcodepic {
+    margin-top: 2rem;
+    height: 65vh;
+    width: 65vh;
+}
+
+.barcode h4 {
+    font-family: 'Bodoni Moda', serif;
+    font-style: bold;
+    font-size: 2rem;
+}
+
+.barcode p {
+    font-size: 1rem;
+}
+
+
+/* media query */
+
+/* laptop */
+@media (max-width: 992px) {
+    html {
+        font-size: 75%;
+    }
+
+}
+
+/* tablet */
+
+@media (max-width: 768px) {
+    .hero {
+        font-size: 65%;
+    }
+    .home {
+        min-height: 600px;
+        font-size: 100%;
+    }
+    
+}
+
+/* phone */
+
+@media (max-width: 576px) {
+    .hero {
+        font-size: 60%;
+    }
+    .home {
+        min-height: 400px;
+        font-size: 100%;
+    }
+
+    .address .fontcard {
+        margin-top: 0rem;
+    }
+}
